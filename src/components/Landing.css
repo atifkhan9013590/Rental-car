@@ -1,0 +1,157 @@
+.landing-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  
+ 
+  
+    box-sizing: border-box;
+  
+   
+    margin-top: 100px;
+    overflow: hidden; 
+}
+.btns-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+@media (max-width: 768px) {
+    .landing-page{
+        display: flex;
+        flex-direction: column;
+        
+       
+    }
+   
+    .right-section{
+      display: none;
+      
+    }
+   .left-section{
+    display: flex;
+    flex-direction: column;
+   
+   
+  
+  
+   }
+   .landing-page h1{
+    font-size: 30px;
+   }
+   .btns-div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   }
+}
+
+.landing-page > div {
+  
+    opacity: 0; /* Initially invisible */
+    transition: all 1s ease; /* Smooth transition for animation */
+}
+
+/* Left section starts off-screen to the left */
+.left-section {
+    transform: translateX(-100%);
+}
+
+/* Right section starts off-screen to the right */
+.right-section {
+    transform: translateX(100%);
+}
+
+/* When visible, move sections into view */
+.landing-page.visible .left-section {
+    opacity: 1;
+    transform: translateX(0); /* Slide in from left */
+}
+
+.landing-page.visible .right-section {
+    opacity: 1;
+    transform: translateX(0); /* Slide in from right */
+}
+
+h1 {
+    font-size: 50px;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    padding: 0px;
+    margin: 0px;
+    color: rgb(104, 97, 97);
+}
+
+
+h1 span {
+    margin: 0px;
+    padding: 0px;
+    color: #ff4c30;
+}
+
+.banner-img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+   
+    margin-left: 50px;
+}
+
+.book {
+    background-color: #ff4c30;
+    padding: 13px 10px;
+   
+    border: none;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+   box-shadow: 1px 1px 3px 1px #f15239;
+
+    
+}
+.chck{
+    background-color: white;
+    color: #f15239;
+    border-radius: 50%;
+    font-size: 10px;
+    padding: 2px;
+}
+
+.learn {
+    background-color: black;
+    padding: 13px 10px;
+    border: none;
+    color: white;
+     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+      box-shadow: 1px 1px 3px 1px #1a1a1a;
+    
+}
+.book:hover{
+    background-color: #1a1a1a;
+    color: white;
+}
+.learn:hover{
+    background-color: white;
+    color: black;
+}
+.right-section {
+  background-image: url('../images/banner_image.png');
+  background-size: cover; /* Ensures the background covers the entire section */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  width: 100%; /* Ensures it covers the width of the section */
+  height: 100%; /* Ensures it covers the height of the section */
+}

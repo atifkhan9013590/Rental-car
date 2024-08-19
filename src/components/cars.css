@@ -1,0 +1,201 @@
+.header-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+.header-sec h1{
+    margin: 0;
+    padding: 0 0;
+    font-family: 'Times New Roman', Times, serif;
+  
+}
+.diplayimage{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
+.slct-car-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    height: 250px;
+    padding-bottom: 10px;
+  
+    box-sizing: border-box;
+  
+}
+
+.slct-car-div h3 {
+   
+    margin: 0;
+    padding: 0 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.slct-car-div p {
+  
+    margin: 5px 0 0 0; 
+    padding: 0 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.slct-cars-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.slct-car-images {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+     width: 100%;
+    gap: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    justify-content: center;
+   
+}
+
+.shake-on-hover{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+/* Define the shake animation */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+/* Apply the animation on hover */
+.shake-on-hover:hover {
+  animation: shake 0.5s; /* Duration of the shake effect */
+}
+
+.rowdisplay{
+    display: flex;
+    flex-direction: row;
+   
+    justify-content: space-evenly;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    gap: 100px;
+    
+}
+.insiderow-display2{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.div1{
+    display: flex;
+    flex-direction: row;
+   
+}
+.div1{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.nsiderow-display h1{
+      margin: 0;
+    padding: 0 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.insiderow-display h2{
+      margin: 0;
+    padding: 0 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.insiderow-display{
+    margin: 5px 0 0 0; 
+    padding: 0 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.inside-div1 h2{
+      margin: 0;
+    padding: 0 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.drive{
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    cursor: pointer;
+}
+.inside-div1 p{
+      margin: 5px 0 0 0; 
+    padding: 0 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.inside-div1{
+    display: flex;
+    flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+.insiderow-display button {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    background-color: #ff4c30;
+    color: white;
+    border: none;
+    box-shadow: 0px 4px 6px #ff4c30; /* Example box shadow */
+    cursor: pointer; /* Optional: changes cursor to pointer on hover */
+    transition: box-shadow 0.3s ease; /* Optional: smooth transition for box shadow */
+}
+
+.insiderow-display button:hover {
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow on hover */
+}
+
+ @keyframes drive {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+
+.drive:hover {
+  animation: shake 0.5s; /* Duration of the shake effect */
+   transform: scaleX(-1);
+}
+
+@media (max-width: 768px) {
+    .slct-car-images{
+        display: flex;
+        flex-direction: column;
+    }
+    .rowdisplay{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-sec h1{
+        font-size: 25px;
+    }
+    .rowdisplay h1{
+        font-size: 25px;
+    }
+}

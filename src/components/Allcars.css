@@ -1,0 +1,152 @@
+.all-cars-h{
+   
+ 
+  box-sizing: border-box;
+  overflow: hidden;
+ 
+  width: 100%;
+}
+.headder-sign {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+   
+   
+    overflow: hidden;
+}
+
+.headder-sign h2,
+.headder-sign h1,
+.headder-sign p {
+    margin: 0; /* Removes the default margin */
+    padding: 0; /* Removes any padding */
+}
+
+/* Add custom spacing if needed */
+.headder-sign h2 {
+    margin-bottom: 5px; /* Adjust as needed */
+}
+
+.headder-sign h1 {
+    margin-bottom: 10px; 
+   
+}
+
+.headder-sign p {
+    margin-top: 10px; 
+   
+}
+
+.car-div{
+    display: flex;
+    flex-direction: row;
+
+ 
+    justify-content: space-evenly;
+   
+ 
+    margin-top: 20px;
+     
+}
+@media  (max-width: 768px) {
+    .car-div{
+        display: flex;
+        flex-direction: column;
+    }
+    .all-cars-h h1{
+        font-size: 30px;
+    }
+    .all-cars-h h2{
+        font-size: 25px;
+    }
+}
+.active{
+background-color: #ff4c30;
+border: none;
+color: white;
+height: 30px;
+display: flex;
+align-items: center;
+cursor: pointer;
+padding-left: 10px;
+padding-right: 10px;
+border-radius: 5px;
+font-family: 'Times New Roman', Times, serif;
+}
+
+.slct-car{
+    width: 300px;
+
+    height: 300px;
+    object-fit: contain;
+}
+.model-btn{
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    display: flex;
+align-items: center;
+cursor: pointer;
+padding-left: 10px;
+padding-right: 10px;
+border-radius: 5px;
+    
+}
+.model-container {
+    display: flex;
+    flex-direction: column;
+  
+   
+   
+   
+  
+   
+   
+    
+}
+
+.model-btn{
+    border: none;
+    height: 35px;
+}
+.detail-car{
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: 500;
+  
+}
+.head-inside{
+     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+ 
+    gap: 20px;
+    padding: 5px;
+    background-color: #ff4c30;
+    color: white;
+}
+.inside-detail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+   border: 0.2px solid black;
+   
+    gap: 20px;
+    padding: 5px;
+}
+.rese-btn{
+    width: 100%;
+    background-color: #ff4c30;
+    color: white;
+    height: 35px;
+    border: none;
+    margin-top: 4px;
+}
+
