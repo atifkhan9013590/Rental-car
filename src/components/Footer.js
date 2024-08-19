@@ -7,7 +7,7 @@ import { faFacebook, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-i
 
 function Footer() {
   return (
-    <div className="Footer">
+    <div className="Footer" id='Footer'>
       <div className="Footer-divs">
         <div className="F1-div">
           <h2>

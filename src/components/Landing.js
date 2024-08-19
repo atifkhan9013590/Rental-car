@@ -36,7 +36,7 @@ function Landing() {
           <button className="book" onClick={() => scrollToForm("form-book")}>
             Book Ride <FontAwesomeIcon icon={faCheck} className="chck" />
           </button>
-          <button className="learn">
+          <button className="learn" onClick={() => scrollToForm("display")}>
             Learn more <FontAwesomeIcon icon={faAngleRight} />
           </button>
         </div>

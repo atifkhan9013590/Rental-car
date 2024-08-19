@@ -15,6 +15,14 @@ function Sidebar({ showsidebar, setshowsidebar }) {
     }
   }, [showsidebar]);
 
+   const scrollToForm = (element) => {
+     const formElement = document.getElementById(element);
+     if (formElement) {
+      setshowsidebar(false)
+       formElement.scrollIntoView({ behavior: "smooth" });
+     }
+   };
+
   return (
     (showsidebar || animateClose) && (
       <div className="sidebar">
@@ -23,12 +31,11 @@ function Sidebar({ showsidebar, setshowsidebar }) {
             &times;
           </span>
           <div className="sidebar-links">
-            <div>Home</div>
-            <div>About</div>
-            <div>Vehicle Model</div>
-            <div>Contact</div>
-            <div>Testimonials</div>
-            <div>Our Team</div>
+            <div onClick={() => scrollToForm("landing")}>Home</div>
+            <div onClick={() => scrollToForm("display")}>About</div>
+            <div onClick={() => scrollToForm("allls")}>Vehicle Model</div>
+            <div onClick={() => scrollToForm("Footer")}>Contact</div>
+            <div onClick={() => scrollToForm("Review")}>Testimonials</div>
           </div>
         </div>
       </div>

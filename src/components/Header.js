@@ -22,7 +22,7 @@ function Header({ showsidebar, setshowsidebar }) {
         <div onClick={() => scrollToForm("landing")}>Home</div>
         <div onClick={() => scrollToForm("display")}>About</div>
         <div onClick={() => scrollToForm("allls")}>Vehicle Model</div>
-        <div onClick={() => scrollToForm("form-book")}>Contact</div>
+        <div onClick={() => scrollToForm("Footer")}>Contact</div>
         <div onClick={() => scrollToForm("Review")}>Testimonials</div>
         <div>Our Team</div>
       </div>
