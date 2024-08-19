@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import "./Landing.css";
-import banner from "../images/banner_car.png";
+import banner from "./images/banner_car.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck, faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { faCheck, faAngleRight} from "@fortawesome/free-solid-svg-icons";
 
 function Landing() {
   useEffect(() => {
@@ -44,6 +44,7 @@ function Landing() {
       <div className="right-section">
         <img src={banner} alt="banner" className="banner-img" />
       </div>
+    
     </div>
   );
 }

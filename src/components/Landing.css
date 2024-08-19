@@ -45,6 +45,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-bottom: 20px;
    }
 }
 
@@ -155,7 +156,7 @@ h1 span {
     color: black;
 }
 .right-section {
-  background-image: url('../images/banner_image.png');
+  background-image: url('./images/banner_image.png');
   background-size: cover; /* Ensures the background covers the entire section */
   background-position: center; /* Centers the background image */
   background-repeat: no-repeat; /* Prevents the image from repeating */

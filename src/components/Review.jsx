@@ -1,6 +1,6 @@
 import React from 'react'
 import './Review.css'
-import user from '../images/user.png'
+import user from './images/user.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faQuoteRightAlt

@@ -1,11 +1,11 @@
 import React from 'react'
-import car from '../images/iconbox-image_01.png'
-import person from '../images/iconbox-image_02.png'
-import cars from '../images/iconbox-image_03.png'
-import display from '../images/display_car_image.png'
-import drive from '../images/drive.png'
-import price from '../images/price.png'
-import charge from '../images/charge.png'
+import car from './images/iconbox-image_01.png'
+import person from './images/iconbox-image_02.png'
+import cars from './images/iconbox-image_03.png'
+import display from './images/display_car_image.png'
+import drive from './images/drive.png'
+import price from './images/price.png'
+import charge from './images/charge.png'
 import './cars.css'
 function SelectCar() {
   return (
