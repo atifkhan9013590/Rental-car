@@ -113,10 +113,13 @@ h1 span {
     margin-top: 10px;
     display: flex;
     flex-direction: row;
+    width: 100%;
     align-items: center;
     justify-content: space-evenly;
    box-shadow: 1px 1px 3px 1px #f15239;
-
+    cursor: pointer;
+    font-weight: 900;
+    border-radius: 4px;
     
 }
 .chck{
@@ -132,8 +135,12 @@ h1 span {
     padding: 13px 10px;
     border: none;
     color: white;
+    width: 100%;
      display: flex;
+     font-weight: 900;
+     border-radius: 4px;
     flex-direction: row;
+    cursor: pointer;
     align-items: center;
     justify-content: space-evenly;
       box-shadow: 1px 1px 3px 1px #1a1a1a;
